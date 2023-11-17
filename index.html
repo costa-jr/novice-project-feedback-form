@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Evaluation Form</title>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Evaluate your mentorship</h1>
+
+        <p>It's time to evaluate your Mentor. Let's go?</p>
+
+        <img
+          src="./assets/img.svg"
+          alt="A speech bubble with rating stars inside."
+        />
+      </header>
+
+      <main>
+        <form id="evaluation-form">
+          <div class="personal-info">
+            <fieldset>
+              <legend class="form-header">
+                <h2>Personal information</h2>
+              </legend>
+
+              <div class="fieldset-wrapper">
+                <div class="two-cols">
+                  <div class="input-wrapper">
+                    <label for="first-name">Name</label>
+                    <input type="text" id="first-name" required />
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" required />
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="email"
+                    >Email <span>(enter a valid email)</span>
+                  </label>
+                  <input type="email" id="email" required />
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="mentor-info">
+            <fieldset>
+              <div class="fieldset-wrapper">
+                <legend>
+                  <h2>Mentor information</h2>
+                </legend>
+
+                <div class="two-cols">
+                  <div class="input-wrapper">
+                    <label for="mentor-name">Select who was your Mentor</label>
+                    <select id="mentor-name" required>
+                      <option value="non-mentor">I didn't have a Mentor</option>
+                      <option value="mentor-1">John Doe</option>
+                      <option value="mentor-2">Jane Doe</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="feedback">Feedback about your Mentor</label>
+                  <textarea id="feedback"></textarea>
+                </div>
+
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="checkbox" />
+                  <label for="checkbox"
+                    >All my questions were clarified during the mentorship
+                    program.</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="schedule">
+            <fieldset>
+              <div class="fieldset-wrapper">
+                <legend>
+                  <h2>Scheduling your next mentorship</h2>
+                </legend>
+
+                <div class="three-cols">
+                  <div class="input-wrapper">
+                    <label for="date">Date <span>(DD/MM/YYYY)</span> </label>
+                    <input type="date" id="date" required />
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="begin-time">From</label>
+                    <input type="time" id="begin-time" required />
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="end-time">To</label>
+                    <input type="time" id="end-time" required />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="submit">
+            <button class="submit-btn" type="submit">Submit Feedback</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
